@@ -17,3 +17,12 @@ Current limitations besides not having a final rest/race decision chart are the 
 Could in theory use an estimated power and other coefficients to get a changing speed - but just altering this function should work with the rest of the code. These segment duration 
 estimates can be used in combination with other code to decide when it could be most beneficial to rest.
 
+Elevation profile: average elevation line not properly weighted with segment length
+![elevation_profile_map_reduced](https://github.com/nfstatz18/RAAM/assets/124414802/8e2fc1a8-0de9-4717-9b13-7983b4290fa7)
+
+RAAM track from coordinates after processing segments:
+![RAAM_Track_reduced](https://github.com/nfstatz18/RAAM/assets/124414802/d5558f5f-94e7-445a-9cb2-da885e0d113d)
+
+
+
+
