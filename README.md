@@ -4,7 +4,7 @@ Used course.py from previous repo and modified to work with this .pkl file to cr
 Need to adjust lines 33 and 182 with .pkl location to work
 
 get_future_seg_weather(lat,lon,time_in_future) in weatherv2.py takes latitude, longitude, and a time from now in seconds to gather estimated wind speed and direction 
-for the desired point of a segment. This is called in main_trial.py where main work is done
+for the desired point of a segment from the 2 day hourly forecast API. This is called in main_trial.py where main work is done
 
 calculate_headwind(rider_bearing, wind_speed, wind_direction) in prediction.py uses previously made formula to calculate the wind relative to rider in m/s. This is also called in
 main_trial.py
