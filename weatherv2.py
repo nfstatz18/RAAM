@@ -9,6 +9,7 @@ Created on Sun Jun  2 14:20:56 2024
 import requests
 import time
 import math
+import config
 
 #not in use but could be useful
 def get_current_seg_weather(lat,lon):
@@ -17,7 +18,7 @@ def get_current_seg_weather(lat,lon):
     #wind speed returns in km/h divide by 3.6 to get m/s
 
     
-    API_KEY = '9API_KEY'
+    API_KEY = config.API_KEY
     unit = 'm' #metric units - wind speed (km/h) 
     url = f'https://api.weather.com/v3/wx/forecast/hourly/2day?geocode={lat},{lon}&format=json&units={unit}&language=en-US&apiKey={API_KEY}'
 
@@ -64,7 +65,7 @@ def get_future_seg_weather(lat,lon,time_in_future):
     else:
         time_rounded_to_search = 3600 * round(est_time/3600)
         
-    API_KEY = 'API_KEY'
+    API_KEY = config.API_KEY
     unit = 'm' #metric units - wind speed (km/h) 
     url = f'https://api.weather.com/v3/wx/forecast/hourly/2day?geocode={lat},{lon}&format=json&units={unit}&language=en-US&apiKey={API_KEY}'
 
