@@ -9,7 +9,7 @@ Created on Sun Jun  2 14:20:56 2024
 import requests
 import time
 import math
-import config
+import apiConfig
 
 #not in use but could be useful
 def get_current_seg_weather(lat,lon):
